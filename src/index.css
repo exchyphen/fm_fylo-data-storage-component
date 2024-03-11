@@ -31,5 +31,26 @@ body {
   justify-content: center;
   align-items: center;
 
+  background-color: var(--very-dark-blue);
   background-image: url("./assets/images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-size: auto 52.5vh;
+  background-position: bottom 0 left;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+@media screen and (max-width: 970px) {
+  body {
+    background-image: url("./assets/images/bg-mobile.png");
+    background-size: cover;
+  }
+  
 }
